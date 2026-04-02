@@ -1,4 +1,4 @@
-var scores1 = [20,35,40,10,05,55]
+var scores1 = [20,35,40,10,5,55]
 let totalDoubled = scores1.filter(scores1 => scores1 % 2 == 0)
 .map(scores1 => scores1*2)
 .reduce((sum, val) => sum + val, 0)
