@@ -31,6 +31,7 @@ for(let i=0; i<marks.length; i++){
 }
 console.log(sum)
 
+// use of reduce method
 let total = marks.reduce((sum, marks) => sum + marks, 0)
 console.log(total)
 
@@ -45,3 +46,13 @@ for(let i=0; i<scores.length; i++)
     }
 }
 console.log(evenScores)
+// use of filter method
+let evenScores2 =scores.filter(scores => scores%2==0)
+console.log(evenScores2)
+
+// use of map method
+
+let doubledScores=evenScores2.map(scores => scores*2)
+console.log(doubledScores)
+let totalDoubled = doubledScores.reduce((sum, val)=> sum + val, 0)
+console.log(totalDoubled)
