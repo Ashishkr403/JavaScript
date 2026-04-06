@@ -8,10 +8,17 @@ properties: Frist_Name, Last_Name, Gender all these are the properties of that p
 
 let person = {
     firstName: 'Ashish',
-    lastName: 'Kumar'
+    lastName: 'Kumar',
+        age : 25,
+        gender : 'Male',
+        fullName : function()
+        {
+           console.log(this.firstName + ' ' + this.lastName)
+        }
 }
 
-console.log(person.lastName)
+console.log(person.fullName())
+console.log(person.firstName)
 console.log(person['lastName'])
 person.firstName = 'Krishna'
 console.log(person)
@@ -20,3 +27,11 @@ person.mobile = 9719329006
 console.log(person)
 delete person.mobile
 console.log(person)
+
+console.log('lastName' in person)
+
+// print all properties of the person object
+for (let key in person)
+{
+    console.log(person[key])
+}

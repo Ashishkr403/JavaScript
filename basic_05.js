@@ -1,5 +1,7 @@
 // topic String 
 
+const Person = require ('./basic_07.js')
+
 let day = "Tuesday "
 console.log(day)
 console.log(typeof(day))
@@ -51,3 +53,7 @@ while(val!== -1)
 }
 
 console.log(count)
+
+let person = new Person("Monu", "Mavi").fullname()
+//console.log(person.fullname())
+console.log(person)
